@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello sunxen</title>
+	<script type="text/javascript" src="react.js"></script>
+	<script type="text/javascript" src="JSXTransformer.js"></script>
+</head>
+<body>
+	<div id="content"></div>
+	<script type="text/jsx">
+		var CommentBox = React.createClass({
+			render: function(){
+				return (
+					<div className="commentBox">
+						this is a comment box!
+					</div>
+				);
+			}
+		});
+		React.render(
+			<CommentBox />,
+			document.getElementById('content')
+		);
+	</script>
+</body>
+</html>
